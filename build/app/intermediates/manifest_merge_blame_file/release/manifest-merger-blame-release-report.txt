@@ -1,0 +1,534 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.frantic.quickk"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:4:5-67
+11-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:5:5-79
+12-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:5:22-76
+13    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+13-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:6:5-77
+13-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:6:22-74
+14    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+14-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:7:5-84
+14-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:7:22-82
+15    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Permissions options for the `notification` group -->
+15-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:8:5-68
+15-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:8:22-65
+16    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+16-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:11:5-77
+16-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:11:22-74
+17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+17-->[:file_picker] /Users/shauryapratapsingh/Desktop/quickk-main/build/file_picker/intermediates/library_manifest/release/AndroidManifest.xml:7:5-80
+17-->[:file_picker] /Users/shauryapratapsingh/Desktop/quickk-main/build/file_picker/intermediates/library_manifest/release/AndroidManifest.xml:7:22-77
+18
+19    <queries>
+19-->[:file_picker] /Users/shauryapratapsingh/Desktop/quickk-main/build/file_picker/intermediates/library_manifest/release/AndroidManifest.xml:9:5-15:15
+20        <intent>
+20-->[:file_picker] /Users/shauryapratapsingh/Desktop/quickk-main/build/file_picker/intermediates/library_manifest/release/AndroidManifest.xml:10:9-14:18
+21            <action android:name="android.intent.action.GET_CONTENT" />
+21-->[:file_picker] /Users/shauryapratapsingh/Desktop/quickk-main/build/file_picker/intermediates/library_manifest/release/AndroidManifest.xml:11:13-72
+21-->[:file_picker] /Users/shauryapratapsingh/Desktop/quickk-main/build/file_picker/intermediates/library_manifest/release/AndroidManifest.xml:11:21-69
+22
+23            <data android:mimeType="*/*" />
+23-->[:file_picker] /Users/shauryapratapsingh/Desktop/quickk-main/build/file_picker/intermediates/library_manifest/release/AndroidManifest.xml:13:13-44
+23-->[:file_picker] /Users/shauryapratapsingh/Desktop/quickk-main/build/file_picker/intermediates/library_manifest/release/AndroidManifest.xml:13:19-41
+24        </intent>
+25        <intent>
+25-->[com.razorpay:checkout:1.6.19] /Users/shauryapratapsingh/.gradle/caches/transforms-3/6f0f28ed167ab9e39dfb3e5e07f42a9c/transformed/jetified-checkout-1.6.19/AndroidManifest.xml:12:9-18:18
+26            <action android:name="android.intent.action.VIEW" />
+26-->[com.razorpay:checkout:1.6.19] /Users/shauryapratapsingh/.gradle/caches/transforms-3/6f0f28ed167ab9e39dfb3e5e07f42a9c/transformed/jetified-checkout-1.6.19/AndroidManifest.xml:13:13-65
+26-->[com.razorpay:checkout:1.6.19] /Users/shauryapratapsingh/.gradle/caches/transforms-3/6f0f28ed167ab9e39dfb3e5e07f42a9c/transformed/jetified-checkout-1.6.19/AndroidManifest.xml:13:21-62
+27
+28            <data
+28-->[:file_picker] /Users/shauryapratapsingh/Desktop/quickk-main/build/file_picker/intermediates/library_manifest/release/AndroidManifest.xml:13:13-44
+29                android:mimeType="*/*"
+29-->[:file_picker] /Users/shauryapratapsingh/Desktop/quickk-main/build/file_picker/intermediates/library_manifest/release/AndroidManifest.xml:13:19-41
+30                android:scheme="*" />
+31        </intent>
+32        <intent>
+32-->[com.razorpay:checkout:1.6.19] /Users/shauryapratapsingh/.gradle/caches/transforms-3/6f0f28ed167ab9e39dfb3e5e07f42a9c/transformed/jetified-checkout-1.6.19/AndroidManifest.xml:19:9-28:18
+33            <action android:name="android.intent.action.VIEW" />
+33-->[com.razorpay:checkout:1.6.19] /Users/shauryapratapsingh/.gradle/caches/transforms-3/6f0f28ed167ab9e39dfb3e5e07f42a9c/transformed/jetified-checkout-1.6.19/AndroidManifest.xml:13:13-65
+33-->[com.razorpay:checkout:1.6.19] /Users/shauryapratapsingh/.gradle/caches/transforms-3/6f0f28ed167ab9e39dfb3e5e07f42a9c/transformed/jetified-checkout-1.6.19/AndroidManifest.xml:13:21-62
+34
+35            <category android:name="android.intent.category.BROWSABLE" />
+35-->[com.razorpay:checkout:1.6.19] /Users/shauryapratapsingh/.gradle/caches/transforms-3/6f0f28ed167ab9e39dfb3e5e07f42a9c/transformed/jetified-checkout-1.6.19/AndroidManifest.xml:22:13-74
+35-->[com.razorpay:checkout:1.6.19] /Users/shauryapratapsingh/.gradle/caches/transforms-3/6f0f28ed167ab9e39dfb3e5e07f42a9c/transformed/jetified-checkout-1.6.19/AndroidManifest.xml:22:23-71
+36
+37            <data
+37-->[:file_picker] /Users/shauryapratapsingh/Desktop/quickk-main/build/file_picker/intermediates/library_manifest/release/AndroidManifest.xml:13:13-44
+38                android:host="pay"
+39                android:mimeType="*/*"
+39-->[:file_picker] /Users/shauryapratapsingh/Desktop/quickk-main/build/file_picker/intermediates/library_manifest/release/AndroidManifest.xml:13:19-41
+40                android:scheme="upi" />
+41        </intent>
+42        <intent>
+42-->[com.razorpay:checkout:1.6.19] /Users/shauryapratapsingh/.gradle/caches/transforms-3/6f0f28ed167ab9e39dfb3e5e07f42a9c/transformed/jetified-checkout-1.6.19/AndroidManifest.xml:29:9-31:18
+43            <action android:name="android.intent.action.MAIN" />
+43-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:31:17-68
+43-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:31:25-66
+44        </intent>
+45        <intent>
+45-->[com.razorpay:checkout:1.6.19] /Users/shauryapratapsingh/.gradle/caches/transforms-3/6f0f28ed167ab9e39dfb3e5e07f42a9c/transformed/jetified-checkout-1.6.19/AndroidManifest.xml:32:9-36:18
+46            <action android:name="android.intent.action.SEND" />
+46-->[com.razorpay:checkout:1.6.19] /Users/shauryapratapsingh/.gradle/caches/transforms-3/6f0f28ed167ab9e39dfb3e5e07f42a9c/transformed/jetified-checkout-1.6.19/AndroidManifest.xml:33:13-65
+46-->[com.razorpay:checkout:1.6.19] /Users/shauryapratapsingh/.gradle/caches/transforms-3/6f0f28ed167ab9e39dfb3e5e07f42a9c/transformed/jetified-checkout-1.6.19/AndroidManifest.xml:33:21-62
+47
+48            <data android:mimeType="*/*" />
+48-->[:file_picker] /Users/shauryapratapsingh/Desktop/quickk-main/build/file_picker/intermediates/library_manifest/release/AndroidManifest.xml:13:13-44
+48-->[:file_picker] /Users/shauryapratapsingh/Desktop/quickk-main/build/file_picker/intermediates/library_manifest/release/AndroidManifest.xml:13:19-41
+49        </intent> <!-- Needs to be explicitly declared on Android R+ -->
+50        <package android:name="com.google.android.apps.maps" />
+50-->[com.google.android.gms:play-services-maps:18.0.2] /Users/shauryapratapsingh/.gradle/caches/transforms-3/52e3da0ce5d9af4ebc79037b88167d26/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:9-64
+50-->[com.google.android.gms:play-services-maps:18.0.2] /Users/shauryapratapsingh/.gradle/caches/transforms-3/52e3da0ce5d9af4ebc79037b88167d26/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:18-61
+51    </queries>
+52
+53    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+53-->[:flutter_local_notifications] /Users/shauryapratapsingh/Desktop/quickk-main/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:7:5-81
+53-->[:flutter_local_notifications] /Users/shauryapratapsingh/Desktop/quickk-main/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:7:22-78
+54    <uses-permission android:name="android.permission.VIBRATE" />
+54-->[:flutter_local_notifications] /Users/shauryapratapsingh/Desktop/quickk-main/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:8:5-66
+54-->[:flutter_local_notifications] /Users/shauryapratapsingh/Desktop/quickk-main/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:8:22-63
+55    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+55-->[:flutter_local_notifications] /Users/shauryapratapsingh/Desktop/quickk-main/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:9:5-81
+55-->[:flutter_local_notifications] /Users/shauryapratapsingh/Desktop/quickk-main/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:9:22-78
+56    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+56-->[:flutter_local_notifications] /Users/shauryapratapsingh/Desktop/quickk-main/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:10:5-79
+56-->[:flutter_local_notifications] /Users/shauryapratapsingh/Desktop/quickk-main/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:10:22-76
+57    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+57-->[:location] /Users/shauryapratapsingh/Desktop/quickk-main/build/location/intermediates/library_manifest/release/AndroidManifest.xml:7:5-81
+57-->[:location] /Users/shauryapratapsingh/Desktop/quickk-main/build/location/intermediates/library_manifest/release/AndroidManifest.xml:7:22-78
+58    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+58-->[:location] /Users/shauryapratapsingh/Desktop/quickk-main/build/location/intermediates/library_manifest/release/AndroidManifest.xml:8:5-79
+58-->[:location] /Users/shauryapratapsingh/Desktop/quickk-main/build/location/intermediates/library_manifest/release/AndroidManifest.xml:8:22-76
+59    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+59-->[com.google.firebase:firebase-messaging:23.0.7] /Users/shauryapratapsingh/.gradle/caches/transforms-3/63886cec0214f53046d13868cc3fd0b2/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:29:5-82
+59-->[com.google.firebase:firebase-messaging:23.0.7] /Users/shauryapratapsingh/.gradle/caches/transforms-3/63886cec0214f53046d13868cc3fd0b2/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:29:22-79
+60
+61    <uses-feature
+61-->[com.google.android.gms:play-services-maps:18.0.2] /Users/shauryapratapsingh/.gradle/caches/transforms-3/52e3da0ce5d9af4ebc79037b88167d26/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:26:5-28:35
+62        android:glEsVersion="0x00020000"
+62-->[com.google.android.gms:play-services-maps:18.0.2] /Users/shauryapratapsingh/.gradle/caches/transforms-3/52e3da0ce5d9af4ebc79037b88167d26/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:27:9-41
+63        android:required="true" />
+63-->[com.google.android.gms:play-services-maps:18.0.2] /Users/shauryapratapsingh/.gradle/caches/transforms-3/52e3da0ce5d9af4ebc79037b88167d26/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:28:9-32
+64
+65    <application
+66        android:name="android.app.Application"
+66-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:11:9-42
+67        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+67-->[androidx.core:core:1.8.0] /Users/shauryapratapsingh/.gradle/caches/transforms-3/4064c808d4264fb3279c64a057d815a6/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+68        android:icon="@mipmap/ic_launcher"
+68-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:13:9-43
+69        android:label="quickk"
+69-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:10:9-31
+70        android:usesCleartextTraffic="true" >
+70-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:12:9-44
+71        <activity
+71-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:14:9-34:20
+72            android:name="com.franticshop.MainActivity"
+72-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:15:13-41
+73            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+73-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:19:13-163
+74            android:exported="true"
+74-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:16:13-36
+75            android:hardwareAccelerated="true"
+75-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:20:13-47
+76            android:launchMode="singleTop"
+76-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:17:13-43
+77            android:theme="@style/LaunchTheme"
+77-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:18:13-47
+78            android:windowSoftInputMode="adjustResize" >
+78-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:21:13-55
+79
+80            <!--
+81                 Specifies an Android theme to apply to this Activity as soon as
+82                 the Android process has started. This theme is visible to the user
+83                 while the Flutter UI initializes. After that, this theme continues
+84                 to determine the Window background behind the Flutter UI.
+85            -->
+86            <meta-data
+86-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:26:13-29:17
+87                android:name="io.flutter.embedding.android.NormalTheme"
+87-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:27:15-70
+88                android:resource="@style/NormalTheme" />
+88-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:28:15-52
+89
+90            <intent-filter>
+90-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:30:13-33:29
+91                <action android:name="android.intent.action.MAIN" />
+91-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:31:17-68
+91-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:31:25-66
+92
+93                <category android:name="android.intent.category.LAUNCHER" />
+93-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:32:17-76
+93-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:32:27-74
+94            </intent-filter>
+95        </activity>
+96        <!--
+97             Don't delete the meta-data below.
+98             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+99        -->
+100        <meta-data
+100-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:37:9-39:33
+101            android:name="flutterEmbedding"
+101-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:38:13-44
+102            android:value="2" />
+102-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:39:13-30
+103        <meta-data
+103-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:40:8-41:69
+104            android:name="com.google.android.geo.API_KEY"
+104-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:40:19-64
+105            android:value="AIzaSyC0dh5qdaxM7yuD9vvLgy7CALxGAJHsrlI" />
+105-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:41:12-67
+106
+107        <service
+107-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:14:9-17:72
+108            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+108-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:15:13-107
+109            android:exported="false"
+109-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:16:13-37
+110            android:permission="android.permission.BIND_JOB_SERVICE" />
+110-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:17:13-69
+111        <service
+111-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:18:9-24:19
+112            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+112-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:19:13-97
+113            android:exported="false" >
+113-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:20:13-37
+114            <intent-filter>
+114-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:21:13-23:29
+115                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+115-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:22:17-78
+115-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:22:25-75
+116            </intent-filter>
+117        </service>
+118
+119        <receiver
+119-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:26:9-33:20
+120            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+120-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:27:13-98
+121            android:exported="true"
+121-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:28:13-36
+122            android:permission="com.google.android.c2dm.permission.SEND" >
+122-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:29:13-73
+123            <intent-filter>
+123-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:30:13-32:29
+124                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+124-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:31:17-81
+124-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:31:25-78
+125            </intent-filter>
+126        </receiver>
+127
+128        <service
+128-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:35:9-39:19
+129            android:name="com.google.firebase.components.ComponentDiscoveryService"
+129-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:35:18-89
+130            android:directBootAware="true"
+130-->[com.google.firebase:firebase-common:20.1.1] /Users/shauryapratapsingh/.gradle/caches/transforms-3/9795594e0d0c3b231dacdb98ab873254/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:35:13-43
+131            android:exported="false" >
+131-->[com.google.firebase:firebase-messaging:23.0.7] /Users/shauryapratapsingh/.gradle/caches/transforms-3/63886cec0214f53046d13868cc3fd0b2/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:55:13-37
+132            <meta-data
+132-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:36:13-38:85
+133                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+133-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:37:17-128
+134                android:value="com.google.firebase.components.ComponentRegistrar" />
+134-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:38:17-82
+135            <meta-data
+135-->[:firebase_core] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:9:13-11:85
+136                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+136-->[:firebase_core] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:10:17-124
+137                android:value="com.google.firebase.components.ComponentRegistrar" />
+137-->[:firebase_core] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:11:17-82
+138            <meta-data
+138-->[com.google.firebase:firebase-messaging:23.0.7] /Users/shauryapratapsingh/.gradle/caches/transforms-3/63886cec0214f53046d13868cc3fd0b2/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:56:13-58:85
+139                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+139-->[com.google.firebase:firebase-messaging:23.0.7] /Users/shauryapratapsingh/.gradle/caches/transforms-3/63886cec0214f53046d13868cc3fd0b2/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:57:17-119
+140                android:value="com.google.firebase.components.ComponentRegistrar" />
+140-->[com.google.firebase:firebase-messaging:23.0.7] /Users/shauryapratapsingh/.gradle/caches/transforms-3/63886cec0214f53046d13868cc3fd0b2/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:58:17-82
+141            <meta-data
+141-->[com.google.firebase:firebase-datatransport:18.1.5] /Users/shauryapratapsingh/.gradle/caches/transforms-3/aa0792c00103ff8b3fa79664d1929e19/transformed/jetified-firebase-datatransport-18.1.5/AndroidManifest.xml:28:13-30:85
+142                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+142-->[com.google.firebase:firebase-datatransport:18.1.5] /Users/shauryapratapsingh/.gradle/caches/transforms-3/aa0792c00103ff8b3fa79664d1929e19/transformed/jetified-firebase-datatransport-18.1.5/AndroidManifest.xml:29:17-115
+143                android:value="com.google.firebase.components.ComponentRegistrar" />
+143-->[com.google.firebase:firebase-datatransport:18.1.5] /Users/shauryapratapsingh/.gradle/caches/transforms-3/aa0792c00103ff8b3fa79664d1929e19/transformed/jetified-firebase-datatransport-18.1.5/AndroidManifest.xml:30:17-82
+144            <meta-data
+144-->[com.google.firebase:firebase-installations:17.0.1] /Users/shauryapratapsingh/.gradle/caches/transforms-3/caace7f4cc916bf98be81143e147e5b6/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:18:13-20:85
+145                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+145-->[com.google.firebase:firebase-installations:17.0.1] /Users/shauryapratapsingh/.gradle/caches/transforms-3/caace7f4cc916bf98be81143e147e5b6/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:19:17-127
+146                android:value="com.google.firebase.components.ComponentRegistrar" />
+146-->[com.google.firebase:firebase-installations:17.0.1] /Users/shauryapratapsingh/.gradle/caches/transforms-3/caace7f4cc916bf98be81143e147e5b6/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:20:17-82
+147        </service>
+148
+149        <provider
+149-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:41:9-45:38
+150            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+150-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:42:13-102
+151            android:authorities="com.frantic.quickk.flutterfirebasemessaginginitprovider"
+151-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:43:13-88
+152            android:exported="false"
+152-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:44:13-37
+153            android:initOrder="99" />
+153-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:45:13-35
+154
+155        <service
+155-->[:geolocator_android] /Users/shauryapratapsingh/Desktop/quickk-main/build/geolocator_android/intermediates/library_manifest/release/AndroidManifest.xml:10:9-14:56
+156            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+156-->[:geolocator_android] /Users/shauryapratapsingh/Desktop/quickk-main/build/geolocator_android/intermediates/library_manifest/release/AndroidManifest.xml:11:13-77
+157            android:enabled="true"
+157-->[:geolocator_android] /Users/shauryapratapsingh/Desktop/quickk-main/build/geolocator_android/intermediates/library_manifest/release/AndroidManifest.xml:12:13-35
+158            android:exported="false"
+158-->[:geolocator_android] /Users/shauryapratapsingh/Desktop/quickk-main/build/geolocator_android/intermediates/library_manifest/release/AndroidManifest.xml:13:13-37
+159            android:foregroundServiceType="location" />
+159-->[:geolocator_android] /Users/shauryapratapsingh/Desktop/quickk-main/build/geolocator_android/intermediates/library_manifest/release/AndroidManifest.xml:14:13-53
+160
+161        <provider
+161-->[:image_picker_android] /Users/shauryapratapsingh/Desktop/quickk-main/build/image_picker_android/intermediates/library_manifest/release/AndroidManifest.xml:8:9-16:20
+162            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+162-->[:image_picker_android] /Users/shauryapratapsingh/Desktop/quickk-main/build/image_picker_android/intermediates/library_manifest/release/AndroidManifest.xml:9:13-82
+163            android:authorities="com.frantic.quickk.flutter.image_provider"
+163-->[:image_picker_android] /Users/shauryapratapsingh/Desktop/quickk-main/build/image_picker_android/intermediates/library_manifest/release/AndroidManifest.xml:10:13-74
+164            android:exported="false"
+164-->[:image_picker_android] /Users/shauryapratapsingh/Desktop/quickk-main/build/image_picker_android/intermediates/library_manifest/release/AndroidManifest.xml:11:13-37
+165            android:grantUriPermissions="true" >
+165-->[:image_picker_android] /Users/shauryapratapsingh/Desktop/quickk-main/build/image_picker_android/intermediates/library_manifest/release/AndroidManifest.xml:12:13-47
+166            <meta-data
+166-->[:image_picker_android] /Users/shauryapratapsingh/Desktop/quickk-main/build/image_picker_android/intermediates/library_manifest/release/AndroidManifest.xml:13:13-15:75
+167                android:name="android.support.FILE_PROVIDER_PATHS"
+167-->[:image_picker_android] /Users/shauryapratapsingh/Desktop/quickk-main/build/image_picker_android/intermediates/library_manifest/release/AndroidManifest.xml:14:17-67
+168                android:resource="@xml/flutter_image_picker_file_paths" />
+168-->[:image_picker_android] /Users/shauryapratapsingh/Desktop/quickk-main/build/image_picker_android/intermediates/library_manifest/release/AndroidManifest.xml:15:17-72
+169        </provider>
+170
+171        <receiver
+171-->[:flutter_local_notifications] /Users/shauryapratapsingh/Desktop/quickk-main/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:14:9-16:40
+172            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+172-->[:flutter_local_notifications] /Users/shauryapratapsingh/Desktop/quickk-main/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:15:13-97
+173            android:exported="false" />
+173-->[:flutter_local_notifications] /Users/shauryapratapsingh/Desktop/quickk-main/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:16:13-37
+174        <receiver
+174-->[:flutter_local_notifications] /Users/shauryapratapsingh/Desktop/quickk-main/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:17:9-26:20
+175            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+175-->[:flutter_local_notifications] /Users/shauryapratapsingh/Desktop/quickk-main/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:18:13-101
+176            android:exported="false" >
+176-->[:flutter_local_notifications] /Users/shauryapratapsingh/Desktop/quickk-main/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:19:13-37
+177            <intent-filter>
+177-->[:flutter_local_notifications] /Users/shauryapratapsingh/Desktop/quickk-main/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:20:13-25:29
+178                <action android:name="android.intent.action.BOOT_COMPLETED" />
+178-->[:flutter_local_notifications] /Users/shauryapratapsingh/Desktop/quickk-main/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:21:17-79
+178-->[:flutter_local_notifications] /Users/shauryapratapsingh/Desktop/quickk-main/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:21:25-76
+179                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+179-->[:flutter_local_notifications] /Users/shauryapratapsingh/Desktop/quickk-main/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:22:17-84
+179-->[:flutter_local_notifications] /Users/shauryapratapsingh/Desktop/quickk-main/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:22:25-81
+180                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+180-->[:flutter_local_notifications] /Users/shauryapratapsingh/Desktop/quickk-main/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:23:17-82
+180-->[:flutter_local_notifications] /Users/shauryapratapsingh/Desktop/quickk-main/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:23:25-79
+181                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+181-->[:flutter_local_notifications] /Users/shauryapratapsingh/Desktop/quickk-main/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:24:17-82
+181-->[:flutter_local_notifications] /Users/shauryapratapsingh/Desktop/quickk-main/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:24:25-79
+182            </intent-filter>
+183        </receiver>
+184
+185        <service
+185-->[:location] /Users/shauryapratapsingh/Desktop/quickk-main/build/location/intermediates/library_manifest/release/AndroidManifest.xml:11:9-15:56
+186            android:name="com.lyokone.location.FlutterLocationService"
+186-->[:location] /Users/shauryapratapsingh/Desktop/quickk-main/build/location/intermediates/library_manifest/release/AndroidManifest.xml:12:13-71
+187            android:enabled="true"
+187-->[:location] /Users/shauryapratapsingh/Desktop/quickk-main/build/location/intermediates/library_manifest/release/AndroidManifest.xml:13:13-35
+188            android:exported="false"
+188-->[:location] /Users/shauryapratapsingh/Desktop/quickk-main/build/location/intermediates/library_manifest/release/AndroidManifest.xml:14:13-37
+189            android:foregroundServiceType="location" />
+189-->[:location] /Users/shauryapratapsingh/Desktop/quickk-main/build/location/intermediates/library_manifest/release/AndroidManifest.xml:15:13-53
+190
+191        <uses-library
+191-->[androidx.window:window:1.0.0-beta04] /Users/shauryapratapsingh/.gradle/caches/transforms-3/a7c83ea4b93d4a1da841400d26eec8f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+192            android:name="androidx.window.extensions"
+192-->[androidx.window:window:1.0.0-beta04] /Users/shauryapratapsingh/.gradle/caches/transforms-3/a7c83ea4b93d4a1da841400d26eec8f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+193            android:required="false" />
+193-->[androidx.window:window:1.0.0-beta04] /Users/shauryapratapsingh/.gradle/caches/transforms-3/a7c83ea4b93d4a1da841400d26eec8f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+194        <uses-library
+194-->[androidx.window:window:1.0.0-beta04] /Users/shauryapratapsingh/.gradle/caches/transforms-3/a7c83ea4b93d4a1da841400d26eec8f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+195            android:name="androidx.window.sidecar"
+195-->[androidx.window:window:1.0.0-beta04] /Users/shauryapratapsingh/.gradle/caches/transforms-3/a7c83ea4b93d4a1da841400d26eec8f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+196            android:required="false" />
+196-->[androidx.window:window:1.0.0-beta04] /Users/shauryapratapsingh/.gradle/caches/transforms-3/a7c83ea4b93d4a1da841400d26eec8f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+197
+198        <receiver
+198-->[com.google.firebase:firebase-messaging:23.0.7] /Users/shauryapratapsingh/.gradle/caches/transforms-3/63886cec0214f53046d13868cc3fd0b2/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:32:9-39:20
+199            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+199-->[com.google.firebase:firebase-messaging:23.0.7] /Users/shauryapratapsingh/.gradle/caches/transforms-3/63886cec0214f53046d13868cc3fd0b2/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:33:13-78
+200            android:exported="true"
+200-->[com.google.firebase:firebase-messaging:23.0.7] /Users/shauryapratapsingh/.gradle/caches/transforms-3/63886cec0214f53046d13868cc3fd0b2/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:34:13-36
+201            android:permission="com.google.android.c2dm.permission.SEND" >
+201-->[com.google.firebase:firebase-messaging:23.0.7] /Users/shauryapratapsingh/.gradle/caches/transforms-3/63886cec0214f53046d13868cc3fd0b2/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:35:13-73
+202            <intent-filter>
+202-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:30:13-32:29
+203                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+203-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:31:17-81
+203-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:31:25-78
+204            </intent-filter>
+205        </receiver>
+206        <!--
+207             FirebaseMessagingService performs security checks at runtime,
+208             but set to not exported to explicitly avoid allowing another app to call it.
+209        -->
+210        <service
+210-->[com.google.firebase:firebase-messaging:23.0.7] /Users/shauryapratapsingh/.gradle/caches/transforms-3/63886cec0214f53046d13868cc3fd0b2/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:45:9-52:19
+211            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+211-->[com.google.firebase:firebase-messaging:23.0.7] /Users/shauryapratapsingh/.gradle/caches/transforms-3/63886cec0214f53046d13868cc3fd0b2/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:46:13-82
+212            android:directBootAware="true"
+212-->[com.google.firebase:firebase-messaging:23.0.7] /Users/shauryapratapsingh/.gradle/caches/transforms-3/63886cec0214f53046d13868cc3fd0b2/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:47:13-43
+213            android:exported="false" >
+213-->[com.google.firebase:firebase-messaging:23.0.7] /Users/shauryapratapsingh/.gradle/caches/transforms-3/63886cec0214f53046d13868cc3fd0b2/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:48:13-37
+214            <intent-filter android:priority="-500" >
+214-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:21:13-23:29
+215                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+215-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:22:17-78
+215-->[:firebase_messaging] /Users/shauryapratapsingh/Desktop/quickk-main/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:22:25-75
+216            </intent-filter>
+217        </service>
+218
+219        <provider
+219-->[com.google.firebase:firebase-common:20.1.1] /Users/shauryapratapsingh/.gradle/caches/transforms-3/9795594e0d0c3b231dacdb98ab873254/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:26:9-31:39
+220            android:name="com.google.firebase.provider.FirebaseInitProvider"
+220-->[com.google.firebase:firebase-common:20.1.1] /Users/shauryapratapsingh/.gradle/caches/transforms-3/9795594e0d0c3b231dacdb98ab873254/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:27:13-77
+221            android:authorities="com.frantic.quickk.firebaseinitprovider"
+221-->[com.google.firebase:firebase-common:20.1.1] /Users/shauryapratapsingh/.gradle/caches/transforms-3/9795594e0d0c3b231dacdb98ab873254/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:28:13-72
+222            android:directBootAware="true"
+222-->[com.google.firebase:firebase-common:20.1.1] /Users/shauryapratapsingh/.gradle/caches/transforms-3/9795594e0d0c3b231dacdb98ab873254/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:29:13-43
+223            android:exported="false"
+223-->[com.google.firebase:firebase-common:20.1.1] /Users/shauryapratapsingh/.gradle/caches/transforms-3/9795594e0d0c3b231dacdb98ab873254/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:30:13-37
+224            android:initOrder="100" />
+224-->[com.google.firebase:firebase-common:20.1.1] /Users/shauryapratapsingh/.gradle/caches/transforms-3/9795594e0d0c3b231dacdb98ab873254/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:31:13-36
+225
+226        <receiver
+226-->[com.razorpay:checkout:1.6.19] /Users/shauryapratapsingh/.gradle/caches/transforms-3/6f0f28ed167ab9e39dfb3e5e07f42a9c/transformed/jetified-checkout-1.6.19/AndroidManifest.xml:40:9-46:20
+227            android:name="com.razorpay.RzpTokenReceiver"
+227-->[com.razorpay:checkout:1.6.19] /Users/shauryapratapsingh/.gradle/caches/transforms-3/6f0f28ed167ab9e39dfb3e5e07f42a9c/transformed/jetified-checkout-1.6.19/AndroidManifest.xml:41:13-57
+228            android:exported="false" >
+228-->[com.razorpay:checkout:1.6.19] /Users/shauryapratapsingh/.gradle/caches/transforms-3/6f0f28ed167ab9e39dfb3e5e07f42a9c/transformed/jetified-checkout-1.6.19/AndroidManifest.xml:42:13-37
+229            <intent-filter>
+229-->[com.razorpay:checkout:1.6.19] /Users/shauryapratapsingh/.gradle/caches/transforms-3/6f0f28ed167ab9e39dfb3e5e07f42a9c/transformed/jetified-checkout-1.6.19/AndroidManifest.xml:43:13-45:29
+230                <action android:name="rzp.device_token.share" />
+230-->[com.razorpay:checkout:1.6.19] /Users/shauryapratapsingh/.gradle/caches/transforms-3/6f0f28ed167ab9e39dfb3e5e07f42a9c/transformed/jetified-checkout-1.6.19/AndroidManifest.xml:44:17-65
+230-->[com.razorpay:checkout:1.6.19] /Users/shauryapratapsingh/.gradle/caches/transforms-3/6f0f28ed167ab9e39dfb3e5e07f42a9c/transformed/jetified-checkout-1.6.19/AndroidManifest.xml:44:25-62
+231            </intent-filter>
+232        </receiver>
+233
+234        <activity
+234-->[com.razorpay:checkout:1.6.19] /Users/shauryapratapsingh/.gradle/caches/transforms-3/6f0f28ed167ab9e39dfb3e5e07f42a9c/transformed/jetified-checkout-1.6.19/AndroidManifest.xml:48:9-60:20
+235            android:name="com.razorpay.CheckoutActivity"
+235-->[com.razorpay:checkout:1.6.19] /Users/shauryapratapsingh/.gradle/caches/transforms-3/6f0f28ed167ab9e39dfb3e5e07f42a9c/transformed/jetified-checkout-1.6.19/AndroidManifest.xml:49:13-57
+236            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+236-->[com.razorpay:checkout:1.6.19] /Users/shauryapratapsingh/.gradle/caches/transforms-3/6f0f28ed167ab9e39dfb3e5e07f42a9c/transformed/jetified-checkout-1.6.19/AndroidManifest.xml:50:13-83
+237            android:exported="true"
+237-->[com.razorpay:checkout:1.6.19] /Users/shauryapratapsingh/.gradle/caches/transforms-3/6f0f28ed167ab9e39dfb3e5e07f42a9c/transformed/jetified-checkout-1.6.19/AndroidManifest.xml:51:13-36
+238            android:theme="@style/CheckoutTheme" >
+238-->[com.razorpay:checkout:1.6.19] /Users/shauryapratapsingh/.gradle/caches/transforms-3/6f0f28ed167ab9e39dfb3e5e07f42a9c/transformed/jetified-checkout-1.6.19/AndroidManifest.xml:52:13-49
+239            <intent-filter>
+239-->[com.razorpay:checkout:1.6.19] /Users/shauryapratapsingh/.gradle/caches/transforms-3/6f0f28ed167ab9e39dfb3e5e07f42a9c/transformed/jetified-checkout-1.6.19/AndroidManifest.xml:53:13-59:29
+240                <action android:name="android.intent.action.MAIN" />
+240-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:31:17-68
+240-->/Users/shauryapratapsingh/Desktop/quickk-main/android/app/src/main/AndroidManifest.xml:31:25-66
+241
+242                <data
+242-->[:file_picker] /Users/shauryapratapsingh/Desktop/quickk-main/build/file_picker/intermediates/library_manifest/release/AndroidManifest.xml:13:13-44
+243                    android:host="rzp.io"
+244                    android:scheme="io.rzp" />
+245            </intent-filter>
+246        </activity>
+247
+248        <meta-data
+248-->[com.razorpay:checkout:1.6.19] /Users/shauryapratapsingh/.gradle/caches/transforms-3/6f0f28ed167ab9e39dfb3e5e07f42a9c/transformed/jetified-checkout-1.6.19/AndroidManifest.xml:62:9-64:58
+249            android:name="com.razorpay.plugin.googlepay_all"
+249-->[com.razorpay:checkout:1.6.19] /Users/shauryapratapsingh/.gradle/caches/transforms-3/6f0f28ed167ab9e39dfb3e5e07f42a9c/transformed/jetified-checkout-1.6.19/AndroidManifest.xml:63:13-61
+250            android:value="com.razorpay.RzpGpayMerged" /> <!-- Needs to be explicitly declared on P+ -->
+250-->[com.razorpay:checkout:1.6.19] /Users/shauryapratapsingh/.gradle/caches/transforms-3/6f0f28ed167ab9e39dfb3e5e07f42a9c/transformed/jetified-checkout-1.6.19/AndroidManifest.xml:64:13-55
+251        <uses-library
+251-->[com.google.android.gms:play-services-maps:18.0.2] /Users/shauryapratapsingh/.gradle/caches/transforms-3/52e3da0ce5d9af4ebc79037b88167d26/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:39:9-41:40
+252            android:name="org.apache.http.legacy"
+252-->[com.google.android.gms:play-services-maps:18.0.2] /Users/shauryapratapsingh/.gradle/caches/transforms-3/52e3da0ce5d9af4ebc79037b88167d26/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:40:13-50
+253            android:required="false" />
+253-->[com.google.android.gms:play-services-maps:18.0.2] /Users/shauryapratapsingh/.gradle/caches/transforms-3/52e3da0ce5d9af4ebc79037b88167d26/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:41:13-37
+254
+255        <activity
+255-->[com.google.android.gms:play-services-auth:17.0.0] /Users/shauryapratapsingh/.gradle/caches/transforms-3/1bb4cd046fafc66e490e77c71ecd27ac/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:23:9-27:75
+256            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+256-->[com.google.android.gms:play-services-auth:17.0.0] /Users/shauryapratapsingh/.gradle/caches/transforms-3/1bb4cd046fafc66e490e77c71ecd27ac/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:24:13-93
+257            android:excludeFromRecents="true"
+257-->[com.google.android.gms:play-services-auth:17.0.0] /Users/shauryapratapsingh/.gradle/caches/transforms-3/1bb4cd046fafc66e490e77c71ecd27ac/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:25:13-46
+258            android:exported="false"
+258-->[com.google.android.gms:play-services-auth:17.0.0] /Users/shauryapratapsingh/.gradle/caches/transforms-3/1bb4cd046fafc66e490e77c71ecd27ac/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:26:13-37
+259            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+259-->[com.google.android.gms:play-services-auth:17.0.0] /Users/shauryapratapsingh/.gradle/caches/transforms-3/1bb4cd046fafc66e490e77c71ecd27ac/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:27:13-72
+260        <!--
+261            Service handling Google Sign-In user revocation. For apps that do not integrate with
+262            Google Sign-In, this service will never be started.
+263        -->
+264        <service
+264-->[com.google.android.gms:play-services-auth:17.0.0] /Users/shauryapratapsingh/.gradle/caches/transforms-3/1bb4cd046fafc66e490e77c71ecd27ac/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:33:9-36:110
+265            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+265-->[com.google.android.gms:play-services-auth:17.0.0] /Users/shauryapratapsingh/.gradle/caches/transforms-3/1bb4cd046fafc66e490e77c71ecd27ac/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:34:13-89
+266            android:exported="true"
+266-->[com.google.android.gms:play-services-auth:17.0.0] /Users/shauryapratapsingh/.gradle/caches/transforms-3/1bb4cd046fafc66e490e77c71ecd27ac/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:35:13-36
+267            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+267-->[com.google.android.gms:play-services-auth:17.0.0] /Users/shauryapratapsingh/.gradle/caches/transforms-3/1bb4cd046fafc66e490e77c71ecd27ac/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:36:13-107
+268
+269        <activity
+269-->[com.google.android.gms:play-services-base:18.0.1] /Users/shauryapratapsingh/.gradle/caches/transforms-3/ac10af2995c26a754eb8b1715f278348/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+270            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+270-->[com.google.android.gms:play-services-base:18.0.1] /Users/shauryapratapsingh/.gradle/caches/transforms-3/ac10af2995c26a754eb8b1715f278348/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+271            android:exported="false"
+271-->[com.google.android.gms:play-services-base:18.0.1] /Users/shauryapratapsingh/.gradle/caches/transforms-3/ac10af2995c26a754eb8b1715f278348/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+272            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+272-->[com.google.android.gms:play-services-base:18.0.1] /Users/shauryapratapsingh/.gradle/caches/transforms-3/ac10af2995c26a754eb8b1715f278348/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+273
+274        <meta-data
+274-->[com.google.android.gms:play-services-basement:18.0.0] /Users/shauryapratapsingh/.gradle/caches/transforms-3/6f06b0408b93931947193cf8dfd19140/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+275            android:name="com.google.android.gms.version"
+275-->[com.google.android.gms:play-services-basement:18.0.0] /Users/shauryapratapsingh/.gradle/caches/transforms-3/6f06b0408b93931947193cf8dfd19140/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+276            android:value="@integer/google_play_services_version" />
+276-->[com.google.android.gms:play-services-basement:18.0.0] /Users/shauryapratapsingh/.gradle/caches/transforms-3/6f06b0408b93931947193cf8dfd19140/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+277
+278        <service
+278-->[com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/shauryapratapsingh/.gradle/caches/transforms-3/30fdcc9a0196a4ffdbf978995121e478/transformed/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:29:9-35:19
+279            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+279-->[com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/shauryapratapsingh/.gradle/caches/transforms-3/30fdcc9a0196a4ffdbf978995121e478/transformed/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:30:13-103
+280            android:exported="false" >
+280-->[com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/shauryapratapsingh/.gradle/caches/transforms-3/30fdcc9a0196a4ffdbf978995121e478/transformed/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:31:13-37
+281            <meta-data
+281-->[com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/shauryapratapsingh/.gradle/caches/transforms-3/30fdcc9a0196a4ffdbf978995121e478/transformed/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:32:13-34:39
+282                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+282-->[com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/shauryapratapsingh/.gradle/caches/transforms-3/30fdcc9a0196a4ffdbf978995121e478/transformed/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:33:17-94
+283                android:value="cct" />
+283-->[com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/shauryapratapsingh/.gradle/caches/transforms-3/30fdcc9a0196a4ffdbf978995121e478/transformed/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:34:17-36
+284        </service>
+285        <service
+285-->[com.google.android.datatransport:transport-runtime:3.1.6] /Users/shauryapratapsingh/.gradle/caches/transforms-3/128466b6b60dbe30641999d98e3e1493/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml:26:9-30:19
+286            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+286-->[com.google.android.datatransport:transport-runtime:3.1.6] /Users/shauryapratapsingh/.gradle/caches/transforms-3/128466b6b60dbe30641999d98e3e1493/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml:27:13-117
+287            android:exported="false"
+287-->[com.google.android.datatransport:transport-runtime:3.1.6] /Users/shauryapratapsingh/.gradle/caches/transforms-3/128466b6b60dbe30641999d98e3e1493/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml:28:13-37
+288            android:permission="android.permission.BIND_JOB_SERVICE" >
+288-->[com.google.android.datatransport:transport-runtime:3.1.6] /Users/shauryapratapsingh/.gradle/caches/transforms-3/128466b6b60dbe30641999d98e3e1493/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml:29:13-69
+289        </service>
+290
+291        <receiver
+291-->[com.google.android.datatransport:transport-runtime:3.1.6] /Users/shauryapratapsingh/.gradle/caches/transforms-3/128466b6b60dbe30641999d98e3e1493/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml:32:9-34:40
+292            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+292-->[com.google.android.datatransport:transport-runtime:3.1.6] /Users/shauryapratapsingh/.gradle/caches/transforms-3/128466b6b60dbe30641999d98e3e1493/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml:33:13-132
+293            android:exported="false" />
+293-->[com.google.android.datatransport:transport-runtime:3.1.6] /Users/shauryapratapsingh/.gradle/caches/transforms-3/128466b6b60dbe30641999d98e3e1493/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml:34:13-37
+294    </application>
+295
+296</manifest>

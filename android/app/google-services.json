@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "832039090252",
+    "project_id": "quickapp-3428b",
+    "storage_bucket": "quickapp-3428b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832039090252:android:3365a91bca71bb3f931ce9",
+        "android_client_info": {
+          "package_name": "com.frantic.quickk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "832039090252-9qh0prcgl6i08t2qfqp1cc2hhjnv97p1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8u8fjE9rTJu2-dNx-DrB1rWixddKmfYE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "832039090252-9qh0prcgl6i08t2qfqp1cc2hhjnv97p1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

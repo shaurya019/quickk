@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/shauryapratapsingh/Desktop/quickk-main/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml",
+            "map": [
+                {
+                    "source": "/Users/shauryapratapsingh/.gradle/caches/transforms-3/4064c808d4264fb3279c64a057d815a6/transformed/core-1.8.0/res/values-en-rIN/values-en-rIN.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                },
+                {
+                    "source": "/Users/shauryapratapsingh/.gradle/caches/transforms-3/32c37bb45ffd91e015219426f6d70223/transformed/jetified-play-services-wallet-18.1.3/res/values-en-rIN/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "206",
+                        "endColumns": "70",
+                        "endOffsets": "276"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "156",
+                        "endColumns": "74",
+                        "endOffsets": "226"
+                    }
+                }
+            ]
+        }
+    ]
+}
