@@ -11647,9 +11647,9 @@ com.google.android.datatransport.runtime.backends.CreationContext:
     public static com.google.android.datatransport.runtime.backends.CreationContext create(android.content.Context,com.google.android.datatransport.runtime.time.Clock,com.google.android.datatransport.runtime.time.Clock)
     private static final java.lang.String DEFAULT_BACKEND_NAME
 kotlinx.coroutines.flow.FlowKt__ReduceKt$single$$inlined$collect$1
-io.flutter.embedding.engine.systemchannels.PlatformViewsChannel:
-    private static final java.lang.String TAG
 io.flutter.embedding.engine.systemchannels.PlatformChannel:
+    private static final java.lang.String TAG
+io.flutter.embedding.engine.systemchannels.PlatformViewsChannel:
     private static final java.lang.String TAG
 androidx.core.animation.AnimatorKt$addListener$4
 com.google.android.gms.common.server.response.zam
@@ -16525,14 +16525,14 @@ io.flutter.plugins.googlemaps.TileOverlayController:
 androidx.webkit.internal.WebViewRenderProcessClientAdapter$1
 com.google.android.gms.auth.api.accounttransfer.zzh
 com.google.android.gms.maps.model.PointOfInterest
-androidx.core.view.ViewCompat$Api16Impl:
-    private void <init>()
 androidx.core.view.ViewCompat$AccessibilityViewProperty:
     void <init>(int,java.lang.Class,int)
     void set(android.view.View,java.lang.Object)
     boolean shouldUpdate(java.lang.Object,java.lang.Object)
     abstract void frameworkSet(android.view.View,java.lang.Object)
     boolean booleanNullToFalseEquals(java.lang.Boolean,java.lang.Boolean)
+androidx.core.view.ViewCompat$Api16Impl:
+    private void <init>()
 com.baseflow.geolocator.R$styleable
 kotlin.text.StringsKt:
     private void <init>()
@@ -16609,10 +16609,10 @@ androidx.webkit.internal.WebViewProviderFactoryAdapter:
     public org.chromium.support_lib_boundary.ServiceWorkerControllerBoundaryInterface getServiceWorkerController()
     public org.chromium.support_lib_boundary.TracingControllerBoundaryInterface getTracingController()
     public org.chromium.support_lib_boundary.ProxyControllerBoundaryInterface getProxyController()
-com.google.firebase.messaging.-$$Lambda$FirebaseMessaging$Uyx38-Jmg4xvTvNieX_4Y_cQnyc:
-    public final void onNewToken(java.lang.String)
 androidx.core.view.-$$Lambda$ViewCompat$wxf3s7r4ODqhaNnVVlzx9IRcwjg:
     public final androidx.core.view.ContentInfoCompat onReceiveContent(androidx.core.view.ContentInfoCompat)
+com.google.firebase.messaging.-$$Lambda$FirebaseMessaging$Uyx38-Jmg4xvTvNieX_4Y_cQnyc:
+    public final void onNewToken(java.lang.String)
 kotlinx.coroutines.scheduling.ExperimentalCoroutineDispatcher:
     public void close()
     public java.lang.String toString()
@@ -17349,8 +17349,8 @@ android.support.v4.media.session.MediaControllerCompat$Callback:
 kotlin.KotlinVersion:
     public static final kotlin.KotlinVersion$Companion Companion
 org.threeten.bp.chrono.ChronoLocalDate$1
+io.flutter.view.TextureRegistry$SurfaceTextureEntry$-CC
 io.flutter.plugin.common.BinaryMessenger$-CC:
     public static io.flutter.plugin.common.BinaryMessenger$TaskQueue $default$makeBackgroundTaskQueue(io.flutter.plugin.common.BinaryMessenger,io.flutter.plugin.common.BinaryMessenger$TaskQueueOptions)
     public static void $default$setMessageHandler(io.flutter.plugin.common.BinaryMessenger,java.lang.String,io.flutter.plugin.common.BinaryMessenger$BinaryMessageHandler,io.flutter.plugin.common.BinaryMessenger$TaskQueue)
-io.flutter.view.TextureRegistry$SurfaceTextureEntry$-CC
 androidx.lifecycle.DefaultLifecycleObserver$-CC

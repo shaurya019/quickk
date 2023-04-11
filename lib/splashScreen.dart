@@ -28,34 +28,34 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-      //backgroundColor: Colors.white,
-      body: Center(
-        child: Container(
-          width: MediaQuery.of(context).size.width,
-          height: MediaQuery.of(context).size.height,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-                fit: BoxFit.fill,
-                image: AssetImage(
-                  "assets/Splash.png",
-                ),
-                opacity: 10),
-          ), //
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SizedBox(
-                child: Image.asset(
-                  "assets/QuickkLogo.png",
-                  fit: BoxFit.fitHeight,
-                  height: 150,
-                ),
+          //backgroundColor: Colors.white,
+          body: Center(
+            child: Container(
+              width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.height,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                    fit: BoxFit.fill,
+                    image: AssetImage(
+                      "assets/Splash.png",
+                    ),
+                    opacity: 10),
+              ), //
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    child: Image.asset(
+                      "assets/QuickkLogo.png",
+                      fit: BoxFit.fitHeight,
+                      height: 150,
+                    ),
+                  ),
+                ],
               ),
-            ],
+            ),
           ),
-        ),
-      ),
-    ));
+        ));
   }
 
   @override
@@ -67,16 +67,6 @@ class _SplashScreenState extends State<SplashScreen> {
   void _route() async {
     await Future.delayed(Duration(milliseconds: 3000));
     SharedPreferences prefs = await SharedPreferences.getInstance();
-
-    Map json = jsonDecode(prefs.getString('userData'));
-    UserData userData = UserData.fromJson(json);
-    userDataService.setUserdata(userData);
-    Map json1 = jsonDecode(prefs.getString('locationData'));
-    LocationData locationData = LocationData.fromJson(json1);
-    locationDataService.setLocationData(locationData);
-    // Navigator.push(context, MaterialPageRoute(builder: (Context) => HomeScreen()));
-    // Get.to(HomeScreen());
-
 
     if (prefs.getString('userData').toString() == "" ||
         prefs.getString('userData').toString() == "null") {
