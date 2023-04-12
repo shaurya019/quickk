@@ -199,9 +199,9 @@ class _ProductScreenState extends State<ProductScreenStateful> {
                         width: 10.w,
                       ),
                       GestureDetector(
-                          // onTap: () {
-                          //   Get.to(ShopingCart()).then((value) => getdata());
-                          // },
+                          onTap: () {
+                            Get.to(ShopingCart()).then((value) => getdata());
+                          },
                           child: Badge(
                             badgeContent: (cartDataList != null)
                                 ? Text(
